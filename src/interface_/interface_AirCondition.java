@@ -1,6 +1,6 @@
 package interface_;
 
-public interface interface_AirCondition {
+public interface interface_AirCondition extends Vehicle {
 
 	// INTERFACE
 	
