@@ -18,5 +18,14 @@ public interface interface_HybridEngine extends Vehicle {
 		// CONCRETE METHODS in the interfaces are not mandatory to override by concrete class; for example, Car Class..
 	}
 	
+	public static String model () {
+		
+		System.out.println("The best model is ....");
+		
+		return "The best..";
+		
+	}
+	
+	
 }
 

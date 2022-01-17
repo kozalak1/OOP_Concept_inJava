@@ -11,15 +11,19 @@ public class Students {
 	
 	
 	private String name="John Nash";
-	
 	private int age=34;
-	
 	private boolean isMarried=true;
 
-	public Students(String name, int age, boolean isMarried) {
-		this.name = name;
-		this.age = age;
-		this.isMarried = isMarried;
+	
+	public Students() {
+		
+	}
+
+		
+		public Students(String name, int age, boolean isMarried) {
+			this.name = name;
+			this.age = age;
+			this.isMarried = isMarried;
 	}
 
 	public String getName() { 		// getName() is called "getter". Getter is for reading data. getter metodları parametre içermez; BİR DEĞER döndürür; ayrıca return type ları da data type dır
@@ -39,12 +43,19 @@ public class Students {
 		this.age = age;
 	}
 
-	public boolean isMarried() {
+	public boolean isMarried() { // eğer data type boolean ise ; getter metodunun adı "get" yerine "is" ile başlar.
 		return isMarried;
 	}
 
 	public void setMarried(boolean isMarried) {
 		this.isMarried = isMarried;
+	}
+
+	// eğer üretilen objeleri konsolda görmek istiyorsak toString() metodunu kullanırız
+	
+	@Override
+	public String toString() {
+		return "Students: name=" + name + ", age=" + age + ", isMarried=" + isMarried;
 	}
 
 	
